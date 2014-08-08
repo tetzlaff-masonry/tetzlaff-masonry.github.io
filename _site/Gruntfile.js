@@ -5,8 +5,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON("package.json"),
 
     sass: {
-      files: {
-        "css/global.css" : "scss/global.scss"
+      dist: {
+        files: {
+          "css/global.css" : "scss/global.scss"
+        }
       }
     },
 
@@ -24,7 +26,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "_layouts/*.html", "_posts/*.md", "_includes/*.html"],
+        files: ["*.html", "_layouts/*.html", "_posts/*.md", "_includes/*.html"],
         tasks: ["shell:jekyllBuild"]
       },
       css: {
