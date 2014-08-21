@@ -1,2 +1,26 @@
+
+
 @import "../bourbon/bourbon";
+@import "../base/base";
 @import "../neat/neat";
+@import "footer";
+@import "menu";
+@import "hero";
+@import "bullets";
+
+body {
+  background-image: url("../images/fabric_of_squares_gray.png")
+}
+
+.home {
+  @include outer-container;
+  div {
+    .bullets {
+      overflow: none;
+    }
+  }
+}
+
+.hero {
+  margin-top: 25px;
+}

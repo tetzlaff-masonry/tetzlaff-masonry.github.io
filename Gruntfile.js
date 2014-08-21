@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         tasks: ["shell:jekyllBuild"]
       },
       css: {
-        files: ["scss/*.scss"],
+        files: ["scss/*.scss", 'base/*.scss'],
         tasks: ["sass", "shell:jekyllBuild"]
       }
     }
